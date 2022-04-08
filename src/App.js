@@ -1,20 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Category from './components/category'
+import Login from './pages/login/login'
 import React, { useState } from 'react';
 
 
+
 function App() {
+  let [token , setToken] = React.useState(0)
+
   return (
     <div className="App">
       <div className = "wrap">
-        {/* header */}
-
-        {/* category */}
-
-        {/* contents */}
-
-        {/* footer */}
+        <Login token={token}/>
       </div>
     </div>
   );
